@@ -10,7 +10,7 @@ COPY package*.json ./
 RUN npm ci
 
 # Run custom install script (e.g. migrations/codegen/etc)
-RUN npm run install
+RUN npm install
 
 # Copy source code
 COPY . .
