@@ -2,7 +2,7 @@
 	import { authClient } from '$lib/auth-client';
 	import { goto } from '$app/navigation';
 	import { browser } from '$app/environment';
-	const UNLOCK_ALL_LEVELS = true;
+	const UNLOCK_ALL_LEVELS = false;
 	if (browser) {
 		(window as any).secretFlag = 'XMAS{console_ninja}';
 	}

@@ -5,7 +5,7 @@
 	import { Button } from '$lib/components/ui/button';
 	import * as Card from '$lib/components/ui/card';
 	import * as Alert from '$lib/components/ui/alert';
-	const UNLOCK_ALL_LEVELS = true;
+	const UNLOCK_ALL_LEVELS = false;
 	const levelId = parseInt($page.params.id || '1');
 	let LevelComponent: any = null;
 	let message = '';
