@@ -9,6 +9,9 @@ COPY package*.json ./
 # Install dependencies
 RUN npm ci
 
+# Run custom install script (e.g. migrations/codegen/etc)
+RUN npm run install
+
 # Copy source code
 COPY . .
 
